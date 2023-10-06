@@ -7,39 +7,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace KosarVezerlo.Forms
 {
     public partial class Board : Form
     {
-        public enum TeamType { Home, Visitor }
+        public enum TeamType { Home, Away }
+        public int HomePoints = 0;
+        public int AwayPoints = 0;
+        public int Quarter = 1;
+        public void RenderData()
+        {
+            homePoints.Text = $"{HomePoints}";
+            awayPoints.Text = $"{AwayPoints}";
+            perionLbl.Text = $"{Quarter}";
+        }
         public Board()
         {
             InitializeComponent();
+            RenderData();
         }
-
 
         public void setQuarter()
         {
-            int count = int.Parse(perionLbl.Text) + 1;
-            if (count > 4) perionLbl.Text = "1";
-            else perionLbl.Text = $"{count}";
+            Quarter = Quarter < 4 ? Quarter + 1 : 1;
+            RenderData();
         }
 
         public void setPoints(TeamType team, int point)
         {
-            if (team == TeamType.Home) setPointsForTeam(homePoints, point);
-            else setPointsForTeam(awayPoints, point);
+            if (team == TeamType.Home) HomePoints = pointChange(HomePoints, point);
+            else AwayPoints = pointChange(AwayPoints, point);
+            RenderData();
         }
 
-        private void setPointsForTeam(Label team, int point)
+        public int pointChange(int oldPoint, int plus)
         {
-            if (point != 0)
-            {
-                int newPoint = Convert.ToInt32(team.Text) + point;
-                team.Text = $"{newPoint}";
-            }
-            else team.Text = "0";
+            return plus != 0 ? Math.Max(oldPoint + plus, 0) : 0;
+        }
+
+        public void setTeamImage(TeamType team, string imgPath)
+        {
+            if (team == TeamType.Home) homePic.Image = Image.FromFile(imgPath);
+            else awayPic.Image = Image.FromFile(imgPath);
         }
     }
 }

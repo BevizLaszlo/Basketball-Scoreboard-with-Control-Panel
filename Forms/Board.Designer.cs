@@ -36,10 +36,10 @@ namespace KosarVezerlo.Forms
             this.awayPoints = new System.Windows.Forms.Label();
             this.perionLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.homePic = new System.Windows.Forms.PictureBox();
+            this.awayPic = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.homePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.awayPic)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -48,7 +48,7 @@ namespace KosarVezerlo.Forms
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(238)))));
-            this.label2.Location = new System.Drawing.Point(479, 146);
+            this.label2.Location = new System.Drawing.Point(494, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 26);
             this.label2.TabIndex = 3;
@@ -60,7 +60,7 @@ namespace KosarVezerlo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(238)))));
-            this.label1.Location = new System.Drawing.Point(189, 146);
+            this.label1.Location = new System.Drawing.Point(204, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 26);
             this.label1.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace KosarVezerlo.Forms
             this.homePoints.BackColor = System.Drawing.Color.Transparent;
             this.homePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 62F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.homePoints.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(238)))));
-            this.homePoints.Location = new System.Drawing.Point(178, 187);
+            this.homePoints.Location = new System.Drawing.Point(193, 185);
             this.homePoints.Name = "homePoints";
             this.homePoints.Size = new System.Drawing.Size(86, 95);
             this.homePoints.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace KosarVezerlo.Forms
             this.awayPoints.BackColor = System.Drawing.Color.Transparent;
             this.awayPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 62F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.awayPoints.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(238)))));
-            this.awayPoints.Location = new System.Drawing.Point(478, 187);
+            this.awayPoints.Location = new System.Drawing.Point(493, 185);
             this.awayPoints.Name = "awayPoints";
             this.awayPoints.Size = new System.Drawing.Size(86, 95);
             this.awayPoints.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace KosarVezerlo.Forms
             this.perionLbl.BackColor = System.Drawing.Color.Transparent;
             this.perionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.perionLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(238)))));
-            this.perionLbl.Location = new System.Drawing.Point(354, 213);
+            this.perionLbl.Location = new System.Drawing.Point(369, 211);
             this.perionLbl.Name = "perionLbl";
             this.perionLbl.Size = new System.Drawing.Size(29, 31);
             this.perionLbl.TabIndex = 2;
@@ -108,35 +108,35 @@ namespace KosarVezerlo.Forms
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(238)))));
-            this.label4.Location = new System.Drawing.Point(320, 187);
+            this.label4.Location = new System.Drawing.Point(335, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 26);
             this.label4.TabIndex = 3;
             this.label4.Text = "PERIOD";
             // 
-            // pictureBox1
+            // homePic
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 163);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(102, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.homePic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("homePic.BackgroundImage")));
+            this.homePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.homePic.InitialImage = null;
+            this.homePic.Location = new System.Drawing.Point(27, 161);
+            this.homePic.Name = "homePic";
+            this.homePic.Size = new System.Drawing.Size(150, 150);
+            this.homePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.homePic.TabIndex = 4;
+            this.homePic.TabStop = false;
             // 
-            // pictureBox2
+            // awayPic
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(585, 163);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(172, 108);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.awayPic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("awayPic.BackgroundImage")));
+            this.awayPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.awayPic.InitialImage = null;
+            this.awayPic.Location = new System.Drawing.Point(600, 161);
+            this.awayPic.Name = "awayPic";
+            this.awayPic.Size = new System.Drawing.Size(150, 150);
+            this.awayPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.awayPic.TabIndex = 4;
+            this.awayPic.TabStop = false;
             // 
             // Board
             // 
@@ -152,15 +152,15 @@ namespace KosarVezerlo.Forms
             this.Controls.Add(this.awayPoints);
             this.Controls.Add(this.homePoints);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.awayPic);
+            this.Controls.Add(this.homePic);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Board";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Board";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.awayPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,7 +174,7 @@ namespace KosarVezerlo.Forms
         private System.Windows.Forms.Label awayPoints;
         private System.Windows.Forms.Label perionLbl;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox homePic;
+        private System.Windows.Forms.PictureBox awayPic;
     }
 }
