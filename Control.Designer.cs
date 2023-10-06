@@ -46,6 +46,8 @@ namespace KosarVezerlo
             this.away0btn = new System.Windows.Forms.Button();
             this.homeRadio = new System.Windows.Forms.RadioButton();
             this.awayRadio = new System.Windows.Forms.RadioButton();
+            this.homeTO = new System.Windows.Forms.Button();
+            this.awayTO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -210,7 +212,7 @@ namespace KosarVezerlo
             this.homeRadio.BackColor = System.Drawing.Color.White;
             this.homeRadio.Checked = true;
             this.homeRadio.ForeColor = System.Drawing.Color.Blue;
-            this.homeRadio.Location = new System.Drawing.Point(34, 3);
+            this.homeRadio.Location = new System.Drawing.Point(295, 2);
             this.homeRadio.Name = "homeRadio";
             this.homeRadio.Padding = new System.Windows.Forms.Padding(5);
             this.homeRadio.Size = new System.Drawing.Size(93, 27);
@@ -224,7 +226,7 @@ namespace KosarVezerlo
             this.awayRadio.AutoSize = true;
             this.awayRadio.BackColor = System.Drawing.Color.White;
             this.awayRadio.ForeColor = System.Drawing.Color.Red;
-            this.awayRadio.Location = new System.Drawing.Point(144, 3);
+            this.awayRadio.Location = new System.Drawing.Point(405, 2);
             this.awayRadio.Name = "awayRadio";
             this.awayRadio.Padding = new System.Windows.Forms.Padding(5);
             this.awayRadio.Size = new System.Drawing.Size(91, 27);
@@ -232,13 +234,35 @@ namespace KosarVezerlo
             this.awayRadio.Text = "Away Team";
             this.awayRadio.UseVisualStyleBackColor = false;
             // 
+            // homeTO
+            // 
+            this.homeTO.Location = new System.Drawing.Point(220, 306);
+            this.homeTO.Name = "homeTO";
+            this.homeTO.Size = new System.Drawing.Size(50, 50);
+            this.homeTO.TabIndex = 2;
+            this.homeTO.Tag = "home";
+            this.homeTO.Text = "T/O";
+            this.homeTO.UseVisualStyleBackColor = true;
+            this.homeTO.Click += new System.EventHandler(this.TimeOut);
+            // 
+            // awayTO
+            // 
+            this.awayTO.Location = new System.Drawing.Point(462, 306);
+            this.awayTO.Name = "awayTO";
+            this.awayTO.Size = new System.Drawing.Size(50, 50);
+            this.awayTO.TabIndex = 2;
+            this.awayTO.Tag = "home";
+            this.awayTO.Text = "T/O";
+            this.awayTO.UseVisualStyleBackColor = true;
+            this.awayTO.Click += new System.EventHandler(this.TimeOut);
+            // 
             // Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(118)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 388);
+            this.ClientSize = new System.Drawing.Size(800, 446);
             this.Controls.Add(this.awayRadio);
             this.Controls.Add(this.homeRadio);
             this.Controls.Add(this.away3btn);
@@ -249,6 +273,8 @@ namespace KosarVezerlo
             this.Controls.Add(this.home2btn);
             this.Controls.Add(this.away1btn);
             this.Controls.Add(this.away0btn);
+            this.Controls.Add(this.awayTO);
+            this.Controls.Add(this.homeTO);
             this.Controls.Add(this.home0btn);
             this.Controls.Add(this.homeM1btn);
             this.Controls.Add(this.home1btn);
@@ -282,6 +308,8 @@ namespace KosarVezerlo
         private System.Windows.Forms.Button away0btn;
         private System.Windows.Forms.RadioButton homeRadio;
         private System.Windows.Forms.RadioButton awayRadio;
+        private System.Windows.Forms.Button homeTO;
+        private System.Windows.Forms.Button awayTO;
     }
 }
 

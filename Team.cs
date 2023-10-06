@@ -13,7 +13,6 @@ namespace KosarVezerlo
     {
         public string Code { get; set; }
         public string Name { get; set; }
-        public string ImgPath => $@"..\..\img\{Code}.png";
         public Button TeamButton { get; set; }
 
 

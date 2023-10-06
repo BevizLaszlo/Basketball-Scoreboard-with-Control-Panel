@@ -46,9 +46,10 @@ namespace KosarVezerlo
             }
         }
 
-        public void teamBtnClick(object sender, MouseEventArgs e)
+        private void teamBtnClick(object sender, MouseEventArgs e)
         {
-            board.setTeamImage(Board.TeamType.Home,"");
+            Board.TeamType team = homeRadio.Checked ? Board.TeamType.Home : Board.TeamType.Away;
+            board.setTeamImage(team, $@"..\..\img\{(sender as Button).Text}.png");
         }
 
         private void setQuarter(object sender, EventArgs e)
@@ -61,6 +62,12 @@ namespace KosarVezerlo
             int pointToAdd = int.Parse((sender as Button).Text);
             Board.TeamType team = Convert.ToString((sender as Button).Tag) == "home" ? Board.TeamType.Home : Board.TeamType.Away;
             board.setPoints(team, pointToAdd);
+        }
+
+        private void TimeOut(object sender, EventArgs e)
+        {
+            Board.TeamType team = (sender as Button).Name == "homeTO" ? Board.TeamType.Home : Board.TeamType.Away;
+            board.ChangeTO(team);
         }
     }
 }

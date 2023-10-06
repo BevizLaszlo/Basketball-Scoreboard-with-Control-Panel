@@ -38,6 +38,8 @@ namespace KosarVezerlo.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.homePic = new System.Windows.Forms.PictureBox();
             this.awayPic = new System.Windows.Forms.PictureBox();
+            this.homeTOpanel = new System.Windows.Forms.Panel();
+            this.awayTOpanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.homePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.awayPic)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +140,20 @@ namespace KosarVezerlo.Forms
             this.awayPic.TabIndex = 4;
             this.awayPic.TabStop = false;
             // 
+            // homeTOpanel
+            // 
+            this.homeTOpanel.Location = new System.Drawing.Point(29, 333);
+            this.homeTOpanel.Name = "homeTOpanel";
+            this.homeTOpanel.Size = new System.Drawing.Size(250, 10);
+            this.homeTOpanel.TabIndex = 5;
+            // 
+            // awayTOpanel
+            // 
+            this.awayTOpanel.Location = new System.Drawing.Point(500, 333);
+            this.awayTOpanel.Name = "awayTOpanel";
+            this.awayTOpanel.Size = new System.Drawing.Size(250, 10);
+            this.awayTOpanel.TabIndex = 5;
+            // 
             // Board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +162,8 @@ namespace KosarVezerlo.Forms
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.awayTOpanel);
+            this.Controls.Add(this.homeTOpanel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.perionLbl);
@@ -176,5 +194,7 @@ namespace KosarVezerlo.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox homePic;
         private System.Windows.Forms.PictureBox awayPic;
+        private System.Windows.Forms.Panel homeTOpanel;
+        private System.Windows.Forms.Panel awayTOpanel;
     }
 }
