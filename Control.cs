@@ -49,25 +49,42 @@ namespace KosarVezerlo
         private void teamBtnClick(object sender, MouseEventArgs e)
         {
             Board.TeamType team = homeRadio.Checked ? Board.TeamType.Home : Board.TeamType.Away;
-            board.setTeamImage(team, $@"..\..\img\{(sender as Button).Text}.png");
+            board.setTeamImage(team, $@"..\..\img\{(sender as Button).Text}.png", sender);
         }
 
         private void setQuarter(object sender, EventArgs e)
         {
-            board.setQuarter();
+            if (!board.isTimeOut) board.setQuarter();
         }
 
         private void newValueAdd(object sender, EventArgs e)
         {
-            int pointToAdd = int.Parse((sender as Button).Text);
-            Board.TeamType team = Convert.ToString((sender as Button).Tag) == "home" ? Board.TeamType.Home : Board.TeamType.Away;
-            board.setPoints(team, pointToAdd);
+            if (!board.isTimeOut)
+            {
+                int pointToAdd = int.Parse((sender as Button).Text);
+                Board.TeamType team = Convert.ToString((sender as Button).Tag) == "home" ? Board.TeamType.Home : Board.TeamType.Away;
+                board.setPoints(team, pointToAdd);
+            }
         }
 
         private void TimeOut(object sender, EventArgs e)
         {
-            Board.TeamType team = (sender as Button).Name == "homeTO" ? Board.TeamType.Home : Board.TeamType.Away;
-            board.ChangeTO(team);
+            if (!board.isTimerStopped && !board.isTimeOut)
+            {
+                Board.TeamType team = (sender as Button).Name == "homeTO" ? Board.TeamType.Home : Board.TeamType.Away;
+                board.ChangeTO(team);
+                board.EnableTimeOutTimer();
+            }
+        }
+
+        private void StopStartTime(object sender, EventArgs e)
+        {
+            if (!board.isTimeOut)
+            {
+                board.isTimerStopped = !board.isTimerStopped;
+                board.EnableGameTimer(!board.isTimerStopped);
+                startStopButton.Text = board.isTimerStopped ? "Start Game" : "Stop Game";
+            }
         }
     }
 }

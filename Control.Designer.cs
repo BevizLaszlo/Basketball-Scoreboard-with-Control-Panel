@@ -48,6 +48,7 @@ namespace KosarVezerlo
             this.awayRadio = new System.Windows.Forms.RadioButton();
             this.homeTO = new System.Windows.Forms.Button();
             this.awayTO = new System.Windows.Forms.Button();
+            this.startStopButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -256,19 +257,30 @@ namespace KosarVezerlo
             this.awayTO.UseVisualStyleBackColor = true;
             this.awayTO.Click += new System.EventHandler(this.TimeOut);
             // 
+            // startStopButton
+            // 
+            this.startStopButton.Location = new System.Drawing.Point(596, 306);
+            this.startStopButton.Name = "startStopButton";
+            this.startStopButton.Size = new System.Drawing.Size(50, 50);
+            this.startStopButton.TabIndex = 2;
+            this.startStopButton.Text = "Start Game";
+            this.startStopButton.UseVisualStyleBackColor = true;
+            this.startStopButton.Click += new System.EventHandler(this.StopStartTime);
+            // 
             // Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(118)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 446);
+            this.ClientSize = new System.Drawing.Size(800, 364);
             this.Controls.Add(this.awayRadio);
             this.Controls.Add(this.homeRadio);
             this.Controls.Add(this.away3btn);
             this.Controls.Add(this.away2btn);
             this.Controls.Add(this.home3btn);
             this.Controls.Add(this.awayM1btn);
+            this.Controls.Add(this.startStopButton);
             this.Controls.Add(this.q1);
             this.Controls.Add(this.home2btn);
             this.Controls.Add(this.away1btn);
@@ -310,6 +322,7 @@ namespace KosarVezerlo
         private System.Windows.Forms.RadioButton awayRadio;
         private System.Windows.Forms.Button homeTO;
         private System.Windows.Forms.Button awayTO;
+        private System.Windows.Forms.Button startStopButton;
     }
 }
 

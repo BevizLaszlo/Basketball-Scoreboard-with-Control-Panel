@@ -1,30 +1,30 @@
-ATL;Atlanta Hawks
-BOS;Boston Celtics
-BKN;Brooklyn Nets
-CHA;Charlotte Hornets
-CHI;Chicago Bulls
-CLE;Cleveland Cavaliers
-DAL;Dallas Mavericks
-DEN;Denver Nuggets
-DET;Detroit Pistons
-GSW;Golden State Warriors
-HOU;Houston Rockets
-IND;Indiana Pacers
-LAC;Los Angeles Clippers
-LAL;Los Angeles Lakers
-MEM;Memphis Grizzlies
-MIA;Miami Heat
-MIL;Milwaukee Bucks
-MIN;Minnesota Timberwolves
-NOP;New Orleans Pelicans
-NYK;New York Knicks
-OKC;Oklahoma City Thunder
-ORL;Orlando Magic
-PHI;Philadelphia 76ers
-PHX;Phoenix Suns
-POR;Portland Trail Blazers
-SAC;Sacramento Kings
-SAS;San Antonio Spurs
-TOR;Toronto Raptors
-UTA;Utah Jazz
-WAS;Washington Wizards
+ATL;Atlanta Hawks;227,58,62;193,211,47
+BOS;Boston Celtics;0,122,51;186,150,83
+BKN;Brooklyn Nets;0,0,0;255,255,255
+CHA;Charlotte Hornets;29,17,96;0,120,140
+CHI;Chicago Bulls;206,17,65;0,0,0
+CLE;Cleveland Cavaliers;134,0,56;4,30,66
+DAL;Dallas Mavericks;184,196,202;0,83,140
+DEN;Denver Nuggets;254,197,36;14,34,64
+DET;Detroit Pistons;200,16,46;29,66,186
+GSW;Golden State Warriors;255,199,44;29,40,138
+HOU;Houston Rockets;206,17,65;0,0,0
+IND;Indiana Pacers;0,45,98;253,187,48
+LAC;Los Angeles Clippers;200,16,46;29,40,138
+LAL;Los Angeles Lakers;85,37,131;249,160,27
+MEM;Memphis Grizzlies;112,114,113;245,177,18
+MIA;Miami Heat;152,0,46;249,160,27
+MIL;Milwaukee Bucks;0,71,27;238,225,198
+MIN;Minnesota Timberwolves;35,97,146;120,190,32
+NOP;New Orleans Pelicans;200,16,46;12,36,64
+NYK;New York Knicks;0,107,182;245,132,38
+OKC;Oklahoma City Thunder;0,122,193;239,59,36
+ORL;Orlando Magic;0,119,192;196,206,212
+PHI;Philadelphia 76ers;196,206,212;0,43,92
+PHX;Phoenix Suns;29,17,96;229,96,32
+POR;Portland Trail Blazers;227,58,62;0,0,0
+SAC;Sacramento Kings;90,45,129;99,114,122
+SAS;San Antonio Spurs;196,206,212;0,0,0
+TOR;Toronto Raptors;206,17,65;0,0,0
+UTA;Utah Jazz;0,71,27;249,160,27
+WAS;Washington Wizards;0,43,92;227,24,55
