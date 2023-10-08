@@ -60,13 +60,13 @@ namespace KosarVezerlo.Forms
             return plus != 0 ? Math.Max(oldPoint + plus, 0) : 0;
         }
 
-        public void setTeamImage(TeamType team, string imgPath, object sender)
+        public void setTeamImage(TeamType team, object sender)
         {
             Color[] colors = (Color[])(sender as Button).Tag;
             PictureBox pic = team == TeamType.Home ? homePic : awayPic;
             Panel pl = team == TeamType.Home ? homePanel : awayPanel;
             
-            pic.BackgroundImage = Image.FromFile(imgPath);
+            pic.BackgroundImage = Image.FromFile($@"..\..\img\{(sender as Button).Text}.png");
             pl.BackColor = colors[0];
             pl.ForeColor = colors[1];
             ShowTO(team);
@@ -160,7 +160,6 @@ namespace KosarVezerlo.Forms
                 isTimeOut = false;
                 isTimerStopped = true;
                 timeOutTimer.Enabled = false;
-                gameTimer.Enabled = true;
                 TimeOutInterval = new TimeSpan(0, 0, 75);
             }
         }

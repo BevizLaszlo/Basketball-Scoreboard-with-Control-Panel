@@ -19,6 +19,8 @@ namespace KosarVezerlo
         public Control()
         {
             InitializeComponent();
+            home0btn.Tag = home1btn.Tag = home2btn.Tag = home3btn.Tag = homeM1btn.Tag = homeTO.Tag = Board.TeamType.Home;
+            away0btn.Tag = away1btn.Tag = away2btn.Tag = away3btn.Tag = awayM1btn.Tag = awayTO.Tag = Board.TeamType.Away;
             LoadTeams();
             RenderTeamBtns();
             board.Show();
@@ -41,7 +43,7 @@ namespace KosarVezerlo
             {
                 TeamsList[i].SetButtonPosition(i);
                 TeamsList[i].TeamButton.MouseClick += teamBtnClick;
-                this.Controls.Add(TeamsList[i].TeamButton);
+                mainPanel.Controls.Add(TeamsList[i].TeamButton);
                 
             }
         }
@@ -49,7 +51,9 @@ namespace KosarVezerlo
         private void teamBtnClick(object sender, MouseEventArgs e)
         {
             Board.TeamType team = homeRadio.Checked ? Board.TeamType.Home : Board.TeamType.Away;
-            board.setTeamImage(team, $@"..\..\img\{(sender as Button).Text}.png", sender);
+            if (team == Board.TeamType.Home) homePicCP.BackgroundImage = Image.FromFile($@"..\..\img\{(sender as Button).Text}.png");
+            else awayPicCP.BackgroundImage = Image.FromFile($@"..\..\img\{(sender as Button).Text}.png");
+            board.setTeamImage(team, sender);
         }
 
         private void setQuarter(object sender, EventArgs e)
@@ -62,7 +66,7 @@ namespace KosarVezerlo
             if (!board.isTimeOut)
             {
                 int pointToAdd = int.Parse((sender as Button).Text);
-                Board.TeamType team = Convert.ToString((sender as Button).Tag) == "home" ? Board.TeamType.Home : Board.TeamType.Away;
+                Board.TeamType team = (Board.TeamType)(sender as Button).Tag;
                 board.setPoints(team, pointToAdd);
             }
         }
@@ -71,8 +75,8 @@ namespace KosarVezerlo
         {
             if (!board.isTimerStopped && !board.isTimeOut)
             {
-                Board.TeamType team = (sender as Button).Name == "homeTO" ? Board.TeamType.Home : Board.TeamType.Away;
-                board.ChangeTO(team);
+                startStopButton.Text = "Start Game";
+                board.ChangeTO((Board.TeamType)(sender as Button).Tag);
                 board.EnableTimeOutTimer();
             }
         }
@@ -82,8 +86,8 @@ namespace KosarVezerlo
             if (!board.isTimeOut)
             {
                 board.isTimerStopped = !board.isTimerStopped;
-                board.EnableGameTimer(!board.isTimerStopped);
                 startStopButton.Text = board.isTimerStopped ? "Start Game" : "Stop Game";
+                board.EnableGameTimer(!board.isTimerStopped);
             }
         }
     }

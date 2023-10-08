@@ -44,9 +44,9 @@ namespace KosarVezerlo.Forms
             this.TimeOutCountLabel = new System.Windows.Forms.Label();
             this.timeOutTimer = new System.Windows.Forms.Timer(this.components);
             this.awayPanel = new System.Windows.Forms.Panel();
+            this.awayTeamName = new System.Windows.Forms.Label();
             this.homePanel = new System.Windows.Forms.Panel();
             this.homeTeamName = new System.Windows.Forms.Label();
-            this.awayTeamName = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.homePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.awayPic)).BeginInit();
@@ -185,6 +185,19 @@ namespace KosarVezerlo.Forms
             this.awayPanel.Size = new System.Drawing.Size(357, 280);
             this.awayPanel.TabIndex = 6;
             // 
+            // awayTeamName
+            // 
+            this.awayTeamName.AutoSize = true;
+            this.awayTeamName.BackColor = System.Drawing.Color.Transparent;
+            this.awayTeamName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.awayTeamName.Location = new System.Drawing.Point(269, 21);
+            this.awayTeamName.Name = "awayTeamName";
+            this.awayTeamName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.awayTeamName.Size = new System.Drawing.Size(81, 29);
+            this.awayTeamName.TabIndex = 2;
+            this.awayTeamName.Text = "AWAY";
+            this.awayTeamName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // homePanel
             // 
             this.homePanel.BackColor = System.Drawing.Color.Transparent;
@@ -210,22 +223,10 @@ namespace KosarVezerlo.Forms
             this.homeTeamName.Text = "HOME";
             this.homeTeamName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // awayTeamName
-            // 
-            this.awayTeamName.AutoSize = true;
-            this.awayTeamName.BackColor = System.Drawing.Color.Transparent;
-            this.awayTeamName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
-            this.awayTeamName.Location = new System.Drawing.Point(269, 21);
-            this.awayTeamName.Name = "awayTeamName";
-            this.awayTeamName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.awayTeamName.Size = new System.Drawing.Size(81, 29);
-            this.awayTeamName.TabIndex = 2;
-            this.awayTeamName.Text = "AWAY";
-            this.awayTeamName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // mainPanel
             // 
             this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mainPanel.AutoSize = true;
             this.mainPanel.Controls.Add(this.homePanel);
             this.mainPanel.Controls.Add(this.awayPanel);
             this.mainPanel.Controls.Add(this.TimeOutCountLabel);
@@ -247,10 +248,10 @@ namespace KosarVezerlo.Forms
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(816, 0);
             this.Name = "Board";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Board";
+            this.Text = "ScoreBoard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.homePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.awayPic)).EndInit();
             this.awayPanel.ResumeLayout(false);
@@ -260,6 +261,7 @@ namespace KosarVezerlo.Forms
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

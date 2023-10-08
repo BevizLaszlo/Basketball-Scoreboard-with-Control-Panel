@@ -35,7 +35,8 @@ namespace KosarVezerlo
                 Text = Code,
                 Height = 40,
                 Width = 80,
-                ForeColor = Color.White,
+                BackColor = Color.WhiteSmoke,
+                ForeColor = Color.Black,
                 Tag = new Color[2] { MainColor, SecondColor },
             };
         }
