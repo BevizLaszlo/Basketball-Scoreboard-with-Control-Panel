@@ -29,9 +29,9 @@ namespace KosarVezerlo.Forms
         public void RenderData()
         {
             homePoints.Text = $"{HomePoints}";
-            homePoints.Left = homePanel.Width - homePoints.Width - 8;
+            homePoints.Left = homePanel.Width - homePoints.Width - 3;
             awayPoints.Text = $"{AwayPoints}";
-            awayPoints.Left = 15;
+            awayPoints.Left = 20;
             perionLbl.Text = $"{Quarter}";
             ShowTO(TeamType.Home);
             ShowTO(TeamType.Away);
@@ -162,6 +162,18 @@ namespace KosarVezerlo.Forms
                 timeOutTimer.Enabled = false;
                 TimeOutInterval = new TimeSpan(0, 0, 75);
             }
+        }
+
+        public void ResetTimers()
+        {
+            isTimeOut = false;
+            isTimerStopped = true;
+            RemainingTime = new TimeSpan(0, 12, 0);
+            TimeOutInterval = new TimeSpan(0, 0, 75);
+            gameTimer.Enabled = false;
+            timeOutTimer.Enabled = false;
+            TimeOutCountLabel.Visible = false;
+            timeLabel.Text = "12:00.0";
         }
     }
 }

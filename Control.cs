@@ -90,5 +90,11 @@ namespace KosarVezerlo
                 board.EnableGameTimer(!board.isTimerStopped);
             }
         }
+
+        private void ResetTimer(object sender, EventArgs e)
+        {
+            startStopButton.Text = "Start Game";
+            board.ResetTimers();
+        }
     }
 }

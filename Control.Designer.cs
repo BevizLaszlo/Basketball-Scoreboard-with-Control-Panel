@@ -52,6 +52,7 @@ namespace KosarVezerlo
             this.homePicCP = new System.Windows.Forms.PictureBox();
             this.awayPicCP = new System.Windows.Forms.PictureBox();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.resetTimeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.homePicCP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.awayPicCP)).BeginInit();
             this.mainPanel.SuspendLayout();
@@ -62,28 +63,30 @@ namespace KosarVezerlo
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(102, 193);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(217)))), ((int)(((byte)(209)))));
+            this.label1.Location = new System.Drawing.Point(70, 190);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 26);
+            this.label1.Size = new System.Drawing.Size(78, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Home";
+            this.label1.Text = "HOME";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(346, 193);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(217)))), ((int)(((byte)(209)))));
+            this.label2.Location = new System.Drawing.Point(314, 190);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 26);
+            this.label2.Size = new System.Drawing.Size(79, 26);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Away";
+            this.label2.Text = "AWAY";
             // 
             // home1btn
             // 
-            this.home1btn.Location = new System.Drawing.Point(107, 248);
+            this.home1btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.home1btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.home1btn.Location = new System.Drawing.Point(75, 245);
             this.home1btn.Name = "home1btn";
             this.home1btn.Size = new System.Drawing.Size(50, 50);
             this.home1btn.TabIndex = 3;
@@ -94,7 +97,9 @@ namespace KosarVezerlo
             // 
             // home2btn
             // 
-            this.home2btn.Location = new System.Drawing.Point(163, 248);
+            this.home2btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.home2btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.home2btn.Location = new System.Drawing.Point(131, 245);
             this.home2btn.Name = "home2btn";
             this.home2btn.Size = new System.Drawing.Size(50, 50);
             this.home2btn.TabIndex = 4;
@@ -105,7 +110,9 @@ namespace KosarVezerlo
             // 
             // home3btn
             // 
-            this.home3btn.Location = new System.Drawing.Point(219, 248);
+            this.home3btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.home3btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.home3btn.Location = new System.Drawing.Point(187, 245);
             this.home3btn.Name = "home3btn";
             this.home3btn.Size = new System.Drawing.Size(50, 50);
             this.home3btn.TabIndex = 5;
@@ -116,7 +123,9 @@ namespace KosarVezerlo
             // 
             // homeM1btn
             // 
-            this.homeM1btn.Location = new System.Drawing.Point(107, 304);
+            this.homeM1btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.homeM1btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.homeM1btn.Location = new System.Drawing.Point(75, 301);
             this.homeM1btn.Name = "homeM1btn";
             this.homeM1btn.Size = new System.Drawing.Size(50, 50);
             this.homeM1btn.TabIndex = 6;
@@ -127,7 +136,9 @@ namespace KosarVezerlo
             // 
             // away1btn
             // 
-            this.away1btn.Location = new System.Drawing.Point(349, 248);
+            this.away1btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.away1btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.away1btn.Location = new System.Drawing.Point(317, 245);
             this.away1btn.Name = "away1btn";
             this.away1btn.Size = new System.Drawing.Size(50, 50);
             this.away1btn.TabIndex = 9;
@@ -138,7 +149,9 @@ namespace KosarVezerlo
             // 
             // awayM1btn
             // 
-            this.awayM1btn.Location = new System.Drawing.Point(349, 304);
+            this.awayM1btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.awayM1btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.awayM1btn.Location = new System.Drawing.Point(317, 301);
             this.awayM1btn.Name = "awayM1btn";
             this.awayM1btn.Size = new System.Drawing.Size(50, 50);
             this.awayM1btn.TabIndex = 12;
@@ -149,7 +162,9 @@ namespace KosarVezerlo
             // 
             // away2btn
             // 
-            this.away2btn.Location = new System.Drawing.Point(405, 248);
+            this.away2btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.away2btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.away2btn.Location = new System.Drawing.Point(373, 245);
             this.away2btn.Name = "away2btn";
             this.away2btn.Size = new System.Drawing.Size(50, 50);
             this.away2btn.TabIndex = 10;
@@ -160,7 +175,9 @@ namespace KosarVezerlo
             // 
             // away3btn
             // 
-            this.away3btn.Location = new System.Drawing.Point(461, 248);
+            this.away3btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.away3btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.away3btn.Location = new System.Drawing.Point(429, 245);
             this.away3btn.Name = "away3btn";
             this.away3btn.Size = new System.Drawing.Size(50, 50);
             this.away3btn.TabIndex = 11;
@@ -171,7 +188,9 @@ namespace KosarVezerlo
             // 
             // q1
             // 
-            this.q1.Location = new System.Drawing.Point(595, 248);
+            this.q1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.q1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.q1.Location = new System.Drawing.Point(563, 245);
             this.q1.Name = "q1";
             this.q1.Size = new System.Drawing.Size(50, 50);
             this.q1.TabIndex = 15;
@@ -184,16 +203,18 @@ namespace KosarVezerlo
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(590, 193);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(217)))), ((int)(((byte)(209)))));
+            this.label3.Location = new System.Drawing.Point(558, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 26);
+            this.label3.Size = new System.Drawing.Size(177, 26);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Time Settings";
+            this.label3.Text = "TIME SETTINGS";
             // 
             // home0btn
             // 
-            this.home0btn.Location = new System.Drawing.Point(163, 304);
+            this.home0btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.home0btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.home0btn.Location = new System.Drawing.Point(131, 301);
             this.home0btn.Name = "home0btn";
             this.home0btn.Size = new System.Drawing.Size(50, 50);
             this.home0btn.TabIndex = 7;
@@ -204,7 +225,9 @@ namespace KosarVezerlo
             // 
             // away0btn
             // 
-            this.away0btn.Location = new System.Drawing.Point(405, 304);
+            this.away0btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.away0btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.away0btn.Location = new System.Drawing.Point(373, 301);
             this.away0btn.Name = "away0btn";
             this.away0btn.Size = new System.Drawing.Size(50, 50);
             this.away0btn.TabIndex = 13;
@@ -216,34 +239,38 @@ namespace KosarVezerlo
             // homeRadio
             // 
             this.homeRadio.AutoSize = true;
-            this.homeRadio.BackColor = System.Drawing.Color.White;
+            this.homeRadio.BackColor = System.Drawing.Color.Transparent;
             this.homeRadio.Checked = true;
-            this.homeRadio.ForeColor = System.Drawing.Color.Blue;
+            this.homeRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.homeRadio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(217)))), ((int)(((byte)(209)))));
             this.homeRadio.Location = new System.Drawing.Point(294, 0);
             this.homeRadio.Name = "homeRadio";
             this.homeRadio.Padding = new System.Windows.Forms.Padding(5);
-            this.homeRadio.Size = new System.Drawing.Size(93, 27);
+            this.homeRadio.Size = new System.Drawing.Size(109, 27);
             this.homeRadio.TabIndex = 1;
             this.homeRadio.TabStop = true;
-            this.homeRadio.Text = "Home Team";
+            this.homeRadio.Text = "HOME TEAM";
             this.homeRadio.UseVisualStyleBackColor = false;
             // 
             // awayRadio
             // 
             this.awayRadio.AutoSize = true;
-            this.awayRadio.BackColor = System.Drawing.Color.White;
-            this.awayRadio.ForeColor = System.Drawing.Color.Red;
+            this.awayRadio.BackColor = System.Drawing.Color.Transparent;
+            this.awayRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.awayRadio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(217)))), ((int)(((byte)(209)))));
             this.awayRadio.Location = new System.Drawing.Point(404, 0);
             this.awayRadio.Name = "awayRadio";
             this.awayRadio.Padding = new System.Windows.Forms.Padding(5);
-            this.awayRadio.Size = new System.Drawing.Size(91, 27);
+            this.awayRadio.Size = new System.Drawing.Size(109, 27);
             this.awayRadio.TabIndex = 2;
-            this.awayRadio.Text = "Away Team";
+            this.awayRadio.Text = "AWAY TEAM";
             this.awayRadio.UseVisualStyleBackColor = false;
             // 
             // homeTO
             // 
-            this.homeTO.Location = new System.Drawing.Point(219, 304);
+            this.homeTO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.homeTO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.homeTO.Location = new System.Drawing.Point(187, 301);
             this.homeTO.Name = "homeTO";
             this.homeTO.Size = new System.Drawing.Size(50, 50);
             this.homeTO.TabIndex = 8;
@@ -254,7 +281,9 @@ namespace KosarVezerlo
             // 
             // awayTO
             // 
-            this.awayTO.Location = new System.Drawing.Point(461, 304);
+            this.awayTO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.awayTO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.awayTO.Location = new System.Drawing.Point(429, 301);
             this.awayTO.Name = "awayTO";
             this.awayTO.Size = new System.Drawing.Size(50, 50);
             this.awayTO.TabIndex = 14;
@@ -265,7 +294,9 @@ namespace KosarVezerlo
             // 
             // startStopButton
             // 
-            this.startStopButton.Location = new System.Drawing.Point(595, 304);
+            this.startStopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.startStopButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.startStopButton.Location = new System.Drawing.Point(619, 245);
             this.startStopButton.Name = "startStopButton";
             this.startStopButton.Size = new System.Drawing.Size(50, 50);
             this.startStopButton.TabIndex = 16;
@@ -276,7 +307,7 @@ namespace KosarVezerlo
             // homePicCP
             // 
             this.homePicCP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.homePicCP.Location = new System.Drawing.Point(239, 193);
+            this.homePicCP.Location = new System.Drawing.Point(207, 190);
             this.homePicCP.Name = "homePicCP";
             this.homePicCP.Size = new System.Drawing.Size(30, 30);
             this.homePicCP.TabIndex = 4;
@@ -285,7 +316,7 @@ namespace KosarVezerlo
             // awayPicCP
             // 
             this.awayPicCP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.awayPicCP.Location = new System.Drawing.Point(481, 193);
+            this.awayPicCP.Location = new System.Drawing.Point(449, 190);
             this.awayPicCP.Name = "awayPicCP";
             this.awayPicCP.Size = new System.Drawing.Size(30, 30);
             this.awayPicCP.TabIndex = 4;
@@ -302,6 +333,7 @@ namespace KosarVezerlo
             this.mainPanel.Controls.Add(this.away2btn);
             this.mainPanel.Controls.Add(this.home3btn);
             this.mainPanel.Controls.Add(this.awayM1btn);
+            this.mainPanel.Controls.Add(this.resetTimeButton);
             this.mainPanel.Controls.Add(this.startStopButton);
             this.mainPanel.Controls.Add(this.q1);
             this.mainPanel.Controls.Add(this.home2btn);
@@ -320,11 +352,23 @@ namespace KosarVezerlo
             this.mainPanel.Size = new System.Drawing.Size(799, 362);
             this.mainPanel.TabIndex = 5;
             // 
+            // resetTimeButton
+            // 
+            this.resetTimeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.resetTimeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.resetTimeButton.Location = new System.Drawing.Point(675, 245);
+            this.resetTimeButton.Name = "resetTimeButton";
+            this.resetTimeButton.Size = new System.Drawing.Size(50, 50);
+            this.resetTimeButton.TabIndex = 16;
+            this.resetTimeButton.Text = "Reset Time";
+            this.resetTimeButton.UseVisualStyleBackColor = true;
+            this.resetTimeButton.Click += new System.EventHandler(this.ResetTimer);
+            // 
             // Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(162)))), ((int)(((byte)(162)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(62)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(832, 382);
             this.Controls.Add(this.mainPanel);
@@ -364,6 +408,7 @@ namespace KosarVezerlo
         private System.Windows.Forms.PictureBox homePicCP;
         private System.Windows.Forms.PictureBox awayPicCP;
         private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Button resetTimeButton;
     }
 }
 
