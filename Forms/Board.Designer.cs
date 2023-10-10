@@ -48,17 +48,17 @@ namespace KosarVezerlo.Forms
             this.homePanel = new System.Windows.Forms.Panel();
             this.homeTeamName = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.homePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.awayPic)).BeginInit();
             this.awayPanel.SuspendLayout();
             this.homePanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // homePoints
@@ -164,7 +164,7 @@ namespace KosarVezerlo.Forms
             this.TimeOutCountLabel.BackColor = System.Drawing.Color.Transparent;
             this.TimeOutCountLabel.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.TimeOutCountLabel.ForeColor = System.Drawing.Color.Red;
-            this.TimeOutCountLabel.Location = new System.Drawing.Point(371, 59);
+            this.TimeOutCountLabel.Location = new System.Drawing.Point(469, 30);
             this.TimeOutCountLabel.Name = "TimeOutCountLabel";
             this.TimeOutCountLabel.Size = new System.Drawing.Size(36, 26);
             this.TimeOutCountLabel.TabIndex = 3;
@@ -240,22 +240,11 @@ namespace KosarVezerlo.Forms
             this.mainPanel.Controls.Add(this.TimeOutCountLabel);
             this.mainPanel.Controls.Add(this.timeLabel);
             this.mainPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.mainPanel.Location = new System.Drawing.Point(10, 25);
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.MaximumSize = new System.Drawing.Size(780, 400);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(780, 400);
             this.mainPanel.TabIndex = 8;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.perionLbl);
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            this.panel1.Location = new System.Drawing.Point(615, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(165, 85);
-            this.panel1.TabIndex = 8;
             // 
             // panel2
             // 
@@ -277,19 +266,29 @@ namespace KosarVezerlo.Forms
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.perionLbl);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.panel1.Location = new System.Drawing.Point(615, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(165, 85);
+            this.panel1.TabIndex = 8;
+            // 
             // Board
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(780, 400);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Board";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScoreBoard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.homePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.awayPic)).EndInit();
             this.awayPanel.ResumeLayout(false);
@@ -298,10 +297,10 @@ namespace KosarVezerlo.Forms
             this.homePanel.PerformLayout();
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
